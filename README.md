@@ -94,14 +94,10 @@ In Command Prompt or PowerShell, execute the following command:
 docker run --pull=always --restart=unless-stopped -d -p 5006:5006 -v C:\ActualBudgetData:/data --name actual_budget actualbudget/actual-server:latest
 ```
 
-
 **Step 5: Access Actual Budget**
 
  -Open a web browser and navigate to ```http://localhost:5006.```
  -Follow the on-screen instructions to complete the initial setup.
-
-### Video
-
 
 
 ### 6. Conclusion
