@@ -88,20 +88,21 @@ mkdir C:\ActualBudgetData
 
 **Step 4: Run the Actual Budget Container**
 
-In Command Prompt or PowerShell, execute:
+In Command Prompt or PowerShell, execute the following command:
 
+```bash
 docker run --pull=always --restart=unless-stopped -d -p 5006:5006 -v C:\ActualBudgetData:/data --name actual_budget actualbudget/actual-server:latest
---pull=always: Ensures the latest image is used.
---restart=unless-stopped: Automatically restarts the container unless explicitly stopped.
--d: Runs the container in detached mode.
--p 5006:5006: Maps port 5006 of the host to port 5006 of the container.
--v C:\ActualBudgetData:/data: Mounts the host directory to the container's /data directory for data persistence.
---name actual_budget: Names the container "actual_budget".
+```
+
 
 **Step 5: Access Actual Budget**
 
- -Open a web browser and navigate to http://localhost:5006.
+ -Open a web browser and navigate to ```http://localhost:5006.```
  -Follow the on-screen instructions to complete the initial setup.
+
+### Video
+
+
 
 ### 6. Conclusion
 Deploying Actual Budget using Docker on a Windows system provides a streamlined approach to managing personal finances with enhanced data privacy. The use of Docker containers ensures consistency across different environments and simplifies the deployment process.
